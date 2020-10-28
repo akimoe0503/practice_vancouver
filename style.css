@@ -1,46 +1,49 @@
 body{
-	width: 800px;
+	width: 1000px;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 }
 
+/*header*/
 header{
-	height: 100px;
-	background-color: #ffe4e1;
+	height: 500px;
 	position: relative;
-
+	background-image: url("IMG_2822.JPG");
+	background-size: cover;
 }
 
-.title{
+.bg_test-text{
+	display: inline-block;/* インラインブロックにする */
+	padding: 20px 30px;/*余白指定 */
+	background-color: rgba(255, 255, 255, 0.3);/* 背景色指定 */
 	color: #d2b48c;
 	font-size: 45px;
 	font-family: 'Londrinas Shadow', cursive;
+	font-weight: 10px;
+}
+
+.bg_test{
 	text-align: center;
+	padding:  150px;
 }
 
-div{
-	display: flex;
-	flex: 1;
-	height: 450px;
-}
-
+/*main*/
 main{
 	flex: 1;
 }
 
-nav{
-	width: 150px;
-}
-
+/*side*/
 aside{
 	width: 200px;
 }
 
+/*footer*/
 footer{
 	height: 100px;
 }
 
+/*レスポンシブ対応*/
 
 @media screen and (max-width: 480px){
 	body, nav, aside{
